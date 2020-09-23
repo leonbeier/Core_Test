@@ -1,0 +1,42 @@
+Main
+(
+    Reset          : IN STD_LOGIC;
+    sdram_addr     : OUT STD_LOGIC_VECTOR (11 downto 0);
+    sdram_ba       : OUT STD_LOGIC_VECTOR (1 downto 0);
+    sdram_cas_n    : OUT STD_LOGIC;
+    sdram_dq       : INOUT STD_LOGIC_VECTOR (15 downto 0);
+    sdram_dqm      : OUT STD_LOGIC_VECTOR (1 downto 0);
+    sdram_ras_n    : OUT STD_LOGIC;
+    sdram_we_n     : OUT STD_LOGIC;
+    sdram_clk_clk  : OUT STD_LOGIC;
+    flash_MISO     : IN STD_LOGIC;
+    flash_MOSI     : OUT STD_LOGIC;
+    flash_SCLK     : OUT STD_LOGIC;
+    flash_SS_n     : INOUT STD_LOGIC;
+    pio_export     : INOUT STD_LOGIC_VECTOR (31 downto 0);
+    pi_export      : INOUT STD_LOGIC_VECTOR (6 downto 0);
+    uart_rxd       : IN STD_LOGIC;
+    uart_txd       : OUT STD_LOGIC;
+)
+{
+    NewComponent NIOSDuino_Processor
+    (
+        Reset          => Reset,
+        sdram_addr     => sdram_addr,
+        sdram_ba       => sdram_ba,
+        sdram_cas_n    => sdram_cas_n,
+        sdram_dq       => sdram_dq,
+        sdram_dqm      => sdram_dqm,
+        sdram_ras_n    => sdram_ras_n,
+        sdram_we_n     => sdram_we_n,
+        sdram_clk_clk  => sdram_clk_clk,
+        flash_MISO     => flash_MISO,
+        flash_MOSI     => flash_MOSI,
+        flash_SCLK     => flash_SCLK,
+        pio_export     => pio_export,
+        pi_export(6 downto 0) => pi_export,
+        pi_export(7)   => flash_SS_n,
+        uart_rxd       => uart_rxd,
+        uart_txd       => uart_txd,
+    );
+}
