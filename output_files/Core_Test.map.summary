@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Sep 23 19:15:04 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Core_Test
+Top-level Entity Name : Core_Test
+Family : MAX 10
+Total logic elements : 4,387
+    Total combinational functions : 3,673
+    Dedicated logic registers : 2,453
+Total registers : 2453
+Total pins : 87
+Total virtual pins : 0
+Total memory bits : 273,664
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 1
+ADC blocks : 0

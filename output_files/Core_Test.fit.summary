@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Sep 23 19:15:36 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Core_Test
+Top-level Entity Name : Core_Test
+Family : MAX 10
+Device : 10M08SAU169C8G
+Timing Models : Final
+Total logic elements : 4,101 / 8,064 ( 51 % )
+    Total combinational functions : 3,686 / 8,064 ( 46 % )
+    Dedicated logic registers : 2,413 / 8,064 ( 30 % )
+Total registers : 2480
+Total pins : 87 / 130 ( 67 % )
+Total virtual pins : 0
+Total memory bits : 273,664 / 387,072 ( 71 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 1 / 1 ( 100 % )
+UFM blocks : 1 / 1 ( 100 % )
+ADC blocks : 0 / 1 ( 0 % )
